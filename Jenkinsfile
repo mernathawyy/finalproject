@@ -7,7 +7,6 @@ pipeline {
                 sh '''
                     mvn --version
                     ansible --version
-                    docker --version
                 '''
             }
         }
