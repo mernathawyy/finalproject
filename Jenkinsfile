@@ -20,11 +20,7 @@ pipeline {
 
         stage('Dockerizing the app') {
             steps {
-                sh '''
-                    docker build -t jpetstoreapp_image .
-                    docker tag jpetstoreapp_image abdalla744/jpetstoreapp_image:latest
-                    docker push abdalla744/jpetstoreapp_image:latest
-                '''
+                sh 'docker build -t jpetstoreapp_image .'
             }
         }
         stage('Deploy a container'){

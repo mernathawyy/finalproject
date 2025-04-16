@@ -10,5 +10,4 @@
         state: started
         ports:
           - "8080:8080"
-        volumes:
-          - "/home/amz/Desktop/javacontainer:/usr/local/tomcat/webapps"
+
