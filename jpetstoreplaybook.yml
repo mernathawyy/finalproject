@@ -1,0 +1,14 @@
+---
+- name: Run Docker container for Java app
+  hosts: local
+  become: true
+  tasks:
+    - name: Run Docker container for Java app
+      docker_container:
+        name: jpetstoreapp_container
+        image: jpetstoreapp_image
+        state: started
+        ports:
+          - "8080:8080"
+        volumes:
+          - "/home/amz/Desktop/javacontainer:/usr/local/tomcat/webapps"
