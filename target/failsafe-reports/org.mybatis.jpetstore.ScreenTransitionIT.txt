@@ -1,0 +1,534 @@
+-------------------------------------------------------------------------------
+Test set: org.mybatis.jpetstore.ScreenTransitionIT
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 184.2 s <<< FAILURE! -- in org.mybatis.jpetstore.ScreenTransitionIT
+org.mybatis.jpetstore.ScreenTransitionIT.testOrder -- Time elapsed: 91.49 s <<< FAILURE!
+Element not found {#Catalog h2}
+Expected: text "Goldfish"
+Screenshot: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testOrder/1744846040791.0.png
+Page source: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testOrder/1744846040791.0.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Catalog h2"}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.shouldBe(Unknown Source)
+	at org.mybatis.jpetstore.ScreenTransitionIT.testOrder(ScreenTransitionIT.java:96)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Catalog h2"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-52-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97283617b1163eeb7b5a49f52dddbb21, findElement {using=css selector, value=#Catalog h2}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35595/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97283617b1163eeb7b5a49f52dddbb21
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+
+org.mybatis.jpetstore.ScreenTransitionIT.testRegistrationUser -- Time elapsed: 10.41 s <<< FAILURE!
+Element not found {By.id: WelcomeContent}
+Expected: empty: attribute value="" and exact text ""
+Screenshot: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testRegistrationUser/1744846051341.1.png
+Page source: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testRegistrationUser/1744846051341.1.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.shouldBe(Unknown Source)
+	at org.mybatis.jpetstore.ScreenTransitionIT.testRegistrationUser(ScreenTransitionIT.java:194)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-52-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97283617b1163eeb7b5a49f52dddbb21, findElement {using=id, value=WelcomeContent}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35595/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97283617b1163eeb7b5a49f52dddbb21
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+
+org.mybatis.jpetstore.ScreenTransitionIT.testLogoContent -- Time elapsed: 10.28 s <<< FAILURE!
+Element not found {By.id: WelcomeContent}
+Expected: empty: attribute value="" and exact text ""
+Screenshot: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testLogoContent/1744846061632.2.png
+Page source: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testLogoContent/1744846061632.2.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.shouldBe(Unknown Source)
+	at org.mybatis.jpetstore.ScreenTransitionIT.testLogoContent(ScreenTransitionIT.java:421)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-52-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97283617b1163eeb7b5a49f52dddbb21, findElement {using=id, value=WelcomeContent}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35595/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97283617b1163eeb7b5a49f52dddbb21
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+
+org.mybatis.jpetstore.ScreenTransitionIT.testSelectItems -- Time elapsed: 10.23 s <<< FAILURE!
+Element not found {By.id: WelcomeContent}
+Expected: empty: attribute value="" and exact text ""
+Screenshot: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testSelectItems/1744846071883.3.png
+Page source: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testSelectItems/1744846071883.3.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.shouldBe(Unknown Source)
+	at org.mybatis.jpetstore.ScreenTransitionIT.testSelectItems(ScreenTransitionIT.java:243)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-52-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97283617b1163eeb7b5a49f52dddbb21, findElement {using=id, value=WelcomeContent}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35595/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97283617b1163eeb7b5a49f52dddbb21
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+
+org.mybatis.jpetstore.ScreenTransitionIT.testUpdateProfile -- Time elapsed: 10.31 s <<< FAILURE!
+Element not found {By.id: WelcomeContent}
+Expected: empty: attribute value="" and exact text ""
+Screenshot: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testUpdateProfile/1744846082250.4.png
+Page source: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testUpdateProfile/1744846082250.4.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.shouldBe(Unknown Source)
+	at org.mybatis.jpetstore.ScreenTransitionIT.testUpdateProfile(ScreenTransitionIT.java:164)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-52-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97283617b1163eeb7b5a49f52dddbb21, findElement {using=id, value=WelcomeContent}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35595/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97283617b1163eeb7b5a49f52dddbb21
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+
+org.mybatis.jpetstore.ScreenTransitionIT.testMainImageContentOnTopPage -- Time elapsed: 10.42 s <<< FAILURE!
+Element not found {By.id: WelcomeContent}
+Expected: empty: attribute value="" and exact text ""
+Screenshot: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testMainImageContentOnTopPage/1744846092627.5.png
+Page source: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testMainImageContentOnTopPage/1744846092627.5.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.shouldBe(Unknown Source)
+	at org.mybatis.jpetstore.ScreenTransitionIT.testMainImageContentOnTopPage(ScreenTransitionIT.java:380)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-52-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97283617b1163eeb7b5a49f52dddbb21, findElement {using=id, value=WelcomeContent}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35595/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97283617b1163eeb7b5a49f52dddbb21
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+
+org.mybatis.jpetstore.ScreenTransitionIT.testQuickLinks -- Time elapsed: 10.22 s <<< FAILURE!
+Element not found {By.id: WelcomeContent}
+Expected: empty: attribute value="" and exact text ""
+Screenshot: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testQuickLinks/1744846102862.6.png
+Page source: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testQuickLinks/1744846102862.6.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.shouldBe(Unknown Source)
+	at org.mybatis.jpetstore.ScreenTransitionIT.testQuickLinks(ScreenTransitionIT.java:349)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-52-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97283617b1163eeb7b5a49f52dddbb21, findElement {using=id, value=WelcomeContent}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35595/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97283617b1163eeb7b5a49f52dddbb21
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+
+org.mybatis.jpetstore.ScreenTransitionIT.testSidebarContentOnTopPage -- Time elapsed: 10.34 s <<< FAILURE!
+Element not found {By.id: WelcomeContent}
+Expected: empty: attribute value="" and exact text ""
+Screenshot: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testSidebarContentOnTopPage/1744846113209.7.png
+Page source: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testSidebarContentOnTopPage/1744846113209.7.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.shouldBe(Unknown Source)
+	at org.mybatis.jpetstore.ScreenTransitionIT.testSidebarContentOnTopPage(ScreenTransitionIT.java:313)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-52-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97283617b1163eeb7b5a49f52dddbb21, findElement {using=id, value=WelcomeContent}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35595/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97283617b1163eeb7b5a49f52dddbb21
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+
+org.mybatis.jpetstore.ScreenTransitionIT.testViewCart -- Time elapsed: 10.25 s <<< FAILURE!
+Element not found {By.id: WelcomeContent}
+Expected: empty: attribute value="" and exact text ""
+Screenshot: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testViewCart/1744846123504.8.png
+Page source: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testViewCart/1744846123504.8.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.shouldBe(Unknown Source)
+	at org.mybatis.jpetstore.ScreenTransitionIT.testViewCart(ScreenTransitionIT.java:280)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-52-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97283617b1163eeb7b5a49f52dddbb21, findElement {using=id, value=WelcomeContent}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35595/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97283617b1163eeb7b5a49f52dddbb21
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+
+org.mybatis.jpetstore.ScreenTransitionIT.testViewHelp -- Time elapsed: 10.16 s <<< FAILURE!
+Element not found {By.id: WelcomeContent}
+Expected: empty: attribute value="" and exact text ""
+Screenshot: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testViewHelp/1744846133676.9.png
+Page source: file:/home/amz/Desktop/java%20app/build/reports/tests/org/mybatis/jpetstore/ScreenTransitionIT/testViewHelp/1744846133676.9.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:104)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:163)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.shouldBe(Unknown Source)
+	at org.mybatis.jpetstore.ScreenTransitionIT.testViewHelp(ScreenTransitionIT.java:297)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#WelcomeContent"}
+  (Session info: chrome=135.0.7049.95)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-52-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97283617b1163eeb7b5a49f52dddbb21, findElement {using=id, value=WelcomeContent}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 135.0.7049.95, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35595}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35595/devtoo..., se:cdpVersion: 135.0.7049.95, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97283617b1163eeb7b5a49f52dddbb21
+	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 11 more
+

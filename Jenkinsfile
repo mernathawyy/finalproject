@@ -11,12 +11,6 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                sh 'mvn -X clean install'
-            }
-        }
-
         stage('Dockerizing the app') {
             steps {
                 sh 'echo "0128" | sudo -S docker build -t jpetstoreapp_image .'
