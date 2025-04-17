@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh '''
           	    echo "${WORKDIR}"
-                echo "0128" | sudo -S docker build -t jpetstoreapp_image ${WORKDIR}
+                echo "0128" | sudo -S docker build -t jpetstoreapp_image ${WORKDIR}/
                  '''
             }
         }
