@@ -22,6 +22,8 @@ pipeline {
             steps {
                 sh '''
                 ls
+                echo "0128" | sudo -S pwd
+                echo "0128" | sudo -S ls
                 echo "0128" | sudo -S docker build -t jpetstoreapp_image .
                       
                 '''
