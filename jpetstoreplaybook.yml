@@ -1,19 +1,16 @@
 ---
-- name: Build Docker image for Java app
+- name: Build and Run Docker Image for Java App
   hosts: localhost
   become: true
   tasks:
+
     - name: Build Docker image
       community.docker.docker_image:
-        build:
-          path: .
         name: jpetstoreapp_image
         tag: latest
+        build:
+          path: "{{ playbook_dir }}"
 
-- name: Run Docker container for Java app
-  hosts: localhost
-  become: true
-  tasks:
     - name: Run Docker container
       community.docker.docker_container:
         name: jpetstoreapp_container
@@ -21,3 +18,4 @@
         state: started
         ports:
           - "8080:8080"
+
