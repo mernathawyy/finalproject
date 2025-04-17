@@ -1,6 +1,9 @@
 pipeline {
     agent any
 
+    environment {
+        WORKDIR = "${env.WORKSPACE}"
+    }
     stages {
         stage('Validate') {
             steps {
@@ -21,10 +24,9 @@ pipeline {
         stage('Dockerizing the app') {
             steps {
                 sh '''
-          	echo "{env.WORKDIR}"
-                echo "0128" | sudo -S docker build -t jpetstoreapp_image {env.WORKDIR}
-                      
-                '''
+          	    echo "${WORKDIR}"
+                echo "0128" | sudo -S docker build -t jpetstoreapp_image ${WORKDIR}
+                 '''
             }
         }
         stage('Deploy a container'){
