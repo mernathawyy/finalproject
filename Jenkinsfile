@@ -10,10 +10,17 @@ pipeline {
                 '''
             }
         }
+        
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+
 
         stage('Dockerizing the app') {
             steps {
-                sh 'docker build --privileged -t jpetstoreapp_image .'
+                sh 'docker build -t jpetstoreapp_image .'
             }
         }
         stage('Deploy a container'){
