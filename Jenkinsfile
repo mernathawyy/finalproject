@@ -20,7 +20,11 @@ pipeline {
 
         stage('Dockerizing the app') {
             steps {
-                sh 'echo "0128" | sudo -S docker build -t jpetstoreapp_image .'
+                sh '''
+                ls
+                echo "0128" | sudo -S docker build -t jpetstoreapp_image .
+                      
+                '''
             }
         }
         stage('Deploy a container'){
