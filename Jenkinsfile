@@ -21,10 +21,8 @@ pipeline {
         stage('Dockerizing the app') {
             steps {
                 sh '''
-                ls
-                echo "0128" | sudo -S pwd
-                echo "0128" | sudo -S ls
-                echo "0128" | sudo -S docker build -t jpetstoreapp_image .
+          	echo "{env.WORKDIR}"
+                echo "0128" | sudo -S docker build -t jpetstoreapp_image {env.WORKDIR}
                       
                 '''
             }
