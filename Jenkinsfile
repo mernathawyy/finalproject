@@ -20,18 +20,9 @@ pipeline {
             }
         }
 
-
-        stage('Dockerizing the app') {
-            steps {
-                sh '''
-          	    echo "${WORKDIR}"
-                echo "0128" | sudo -S docker build -t jpetstoreapp_image ${WORKDIR}/
-                 '''
-            }
-        }
         stage('Deploy a container'){
             steps {
-                sh 'ansible-playbook jpetstoreplaybook.yml'
+                sh 'echo "0128" | sudo -S ansible-playbook jpetstoreplaybook.yml'
             }
         }
     }
